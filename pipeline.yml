@@ -1,1 +1,13 @@
-name: ci_pipeline
+resources:
+- name: ci
+  type: git
+  source:
+    branch: master
+    uri: https://github.com/nehagjain15/ci_pipeline.git
+jobs:
+- name: scareaway
+  plan:
+  - get: ci
+    trigger: true
+  - task: run
+    file: ci/tasks/run.yml
