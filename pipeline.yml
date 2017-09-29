@@ -11,3 +11,5 @@ jobs:
     trigger: true
   - task: run
     file: ci/tasks/run.yml
+  - task: scare
+    file: ci/tasks/scare.yml

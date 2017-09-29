@@ -8,6 +8,6 @@ image_resource:
 inputs:
 - name: ci
 run:
-  path: ci/tasks/run.sh
+  path: /warning
 
 
